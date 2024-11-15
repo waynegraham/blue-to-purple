@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Footer from "./components/Footer";
-// import Toggle from "./components/Toggle";
+import Navigation from "./components/Navigation";
 import movesData from "./data/moves.json"
 
 function App() {
@@ -23,8 +23,9 @@ function App() {
 
   return (
     <>
-    {/* <Toggle/> */}
+    <Navigation /> {/* Navigation bar */}
     <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-2">
+      
     <h1
         className="inline-block font-extrabold bg-gradient-to-r from-blue-400 to-purple-800 bg-clip-text text-7xl text-transparent"
       >
@@ -38,7 +39,7 @@ function App() {
       <a href="https://waynegraham.github.io/white-to-blue/">White to Blue</a>
       </p> */}
 
-      <h1 className="text-xl text-purple-800 dark:text-purple-300 font-semibold">Test Requirements</h1>
+      <h1 className="text-xl text-purple-800 dark:text-purple-400 font-semibold">Test Requirements</h1>
       {movesData.map((move) => ( // Map through moves data
         <div key={move.label}>
           <h2 className="my-3 text-xl text-gray-900 dark:text-gray-300">{move.label}</h2>
@@ -48,7 +49,7 @@ function App() {
                 <a
                   href="#"
                   onClick={() => openModal(m.youtube, m.name)} // Open modal on click
-                  className="font-medium text-purple-600 dark:text-blue-500 hover:underline"
+                  className="font-medium text-purple-600 dark:text-purple-300 hover:underline"
                 >
                   {m.name}
                 </a>
@@ -61,8 +62,8 @@ function App() {
 
       {isModalOpen && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <div className="bg-white w-11/12 h-11/12 flex flex-col rounded-lg"> {/* Modal container */}
-                  <button onClick={closeModal} className="absolute top-2 right-2">X</button>
+              <div className="bg-white dark:bg-black w-11/12 h-11/12 flex flex-col rounded-lg"> {/* Modal container */}
+                  <button onClick={closeModal} className="absolute top-2 right-2 dark:text-white">X</button>
                   <h2 className="text-xl font-semibold mb-2">{modalTitle}</h2> {/* Display modal title */}
                   <div className="relative w-full" style={{ paddingTop: '56.25%' }}> {/* Aspect ratio 16:9 */}
                       <iframe 
@@ -75,7 +76,7 @@ function App() {
                       ></iframe>
                   </div>
                   <div className="flex justify-center mt-4"> {/* Center the button */}
-                      <button onClick={closeModal} className="bg-blue-500 text-white px-4 py-2 my-2 rounded">Close</button>
+                      <button onClick={closeModal} className="bg-indigo-500 text-white px-4 py-2 my-2 rounded">Close</button>
                   </div>
               </div>
           </div>
