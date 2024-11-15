@@ -8,6 +8,15 @@ function Navigation() {
         <a href="https://waynegraham.github.io/white-to-blue" className="flex">
           <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">White to Blue</span>
         </a>
+
+        <a href="https://waynegraham.github.io/blue-to-purple/" className="flex">
+          <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white underline underline-offset-8">Blue to Purple</span>
+        </a>
+
+        <a href="#" className="flex">
+          <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">Purple to Brown</span>
+        </a>
+
         <div className="flex md:order-2">
           <DarkmodeSelector /> {/* Darkmode toggle */}  
         </div>
