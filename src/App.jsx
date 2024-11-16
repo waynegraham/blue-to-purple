@@ -3,6 +3,7 @@ import './App.css'
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import movesData from "./data/moves.json"
+// import { MdTitle } from 'react-icons/md';
 
 function App() {
 
@@ -10,9 +11,9 @@ function App() {
   const [selectedVideoId, setSelectedVideoId] = useState('')
   const [modalTitle, setModalTitle] = useState(''); // State for modal title
 
-
   const openModal = (videoId, title) => {
     setSelectedVideoId(videoId);
+    setModalTitle(title);
     setIsModalOpen(true);
   }
 
@@ -32,15 +33,11 @@ function App() {
       >
         Blue to Purple
       </h1>
-      <h2 className="mt-3 mb-8 text-slate-600 dark:text-slate-300 text-2xl font-semibold tracking-tighter">
-        Curriculum Techniques
+      <h2 className="inline-block mt-5 mb-8 text-purple-600 dark:text-purple-300 text-2xl font-semibold tracking-tighter">
+        Purple Belt Demonstration
       </h2>
 
-      {/* <p>
-      <a href="https://waynegraham.github.io/white-to-blue/">White to Blue</a>
-      </p> */}
-
-      <h1 className="text-xl text-purple-800 dark:text-purple-400 font-semibold">Test Requirements</h1>
+      {/* <h1 className="text-xl text-purple-800 dark:text-purple-400 font-semibold">Test Requirements</h1> */}
       {movesData.map((move) => ( // Map through moves data
         <div key={move.label}>
           <h2 className="my-3 text-xl text-gray-900 dark:text-gray-300">{move.label}</h2>
