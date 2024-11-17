@@ -1,9 +1,9 @@
 // import DarkmodeSelector from './DarkmodeSelector';
-import { Navbar, DarkThemeToggle, Flowbite } from "flowbite-react";
+import { Navbar, DarkThemeToggle } from "flowbite-react";
 
 function Navigation() {
   return (
-    <Flowbite>
+    <div className="print:hidden">
       <Navbar fluid rounded>
         {/* <Navbar.Brand href="https://waynegraham.github.io/blue-to-purple">
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -37,7 +37,7 @@ function Navigation() {
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
-    </Flowbite>
+    </div>
   );
 }
 
