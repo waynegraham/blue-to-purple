@@ -17,20 +17,20 @@ function Navigation() {
 
         <Navbar.Collapse>
           <Navbar.Link
-            className="md:hover:text-blue-700"
+            className="hover:underline md:hover:text-blue-700"
             href="https://waynegraham.github.io/white-to-blue"
           >
             White to Blue
           </Navbar.Link>
           <Navbar.Link
-            className="md:text-purple-700 bg-purple-700 underline"
+            className="hover:underline md:text-purple-700 bg-purple-700 underline"
             href="https://waynegraham.github.io/blue-to-purple"
             active
           >
             Blue to Purple
           </Navbar.Link>
           <Navbar.Link
-            className="md:hover:text-yellow-900"
+            className="hover:underline md:hover:text-yellow-900"
             href="https://waynegraham.github.io/purple-to-brown"
           >
             Purple to Brown
