@@ -64,7 +64,6 @@ function App() {
                   ) => (
                     <li key={m.name}>
                       <a
-                        href="#"
                         onClick={() => openModal(m.youtube, m.name)} // Open modal on click
                         className="font-medium text-purple-600 dark:text-purple-300 hover:underline"
                       >
