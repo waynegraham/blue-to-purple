@@ -27,8 +27,7 @@ function Footer() {
                 fill="currentColor"
               ></path>
             </svg>
-            <p className="ml-2 h-7">github</p></a
-          >
+            <p className="ml-2 h-7">github</p></a>
         </li>
         <li>
           <a

@@ -3,134 +3,226 @@
     "label": "Standing Defenses from the Front",
     "moves": [
       {
+        "name": "Hip throw",
+        "note": "From T-position, step foot between, swivel hips and then go farther out to get hips in.",
+        "youtube": "3XdoMTbPGkc?start=11"
+      },
+      {
+        "name": "Two-hand front choke defense (Bend at Hips)",
+        "note": "Flex your neck; down and around the hands",
+        "youtube": "70l_wIaC7D4?start=21"
+      },
+      {
+        "name": "Two-Handed Lapel Grab Defense (with hip throw)",
+        "note": "high grab to head and arm hip throw",
+        "youtube": "9QA0L4aOOKk?start=10"
+      },
+      {
         "name": "Two-hand front choke defense (with arm lock)",
         "note": "When grabbed by the neck, heart grip around wrist. Establish base and lean forward to secure the hand, twising it out to create tension. Step forward and under the arm and then behind the attacker. Finish in an arm lock.",
-        "youtube": "C4_OsZPCnNc?start=6"
+        "youtube": "C4_OsZPCnNc?start=6",
+        "bold": true
       },
       {
         "name": "Two-hand front choke defense (against a wall)",
         "note": "Reach behind and grab at least one finger. When you get one, grab the wrist with your free hand and pin against chest. Lean forward for the break.",
-        "youtube": "mQuw_0jbGlk?start=7"
+        "youtube": "mQuw_0jbGlk?start=7",
+        "bold": true
+      },
+      {
+        "name": "Single Hand Front Choke Defense (against wall)",
+        "note": "strike wrist, turn, elbow to head",
+        "youtube": "DFNbQsnY5G8"
       },
       {
         "name": "Wall-pin defense",
         "note": "When attacker has both collars, shuffle-step sideways toward attacker's forward let, parallel to the wall and slam attacker against the wall. Follow with a knee strike. ",
-        "youtube": "u24QnL1EGE8?start=444"
+        "youtube": "u24QnL1EGE8?start=444",
+        "bold": true
+      },
+      {
+        "name": "Single-Hand Lapel Grab Defense (bent elbow)",
+        "note": "low grab, step under to chicken wing",
+        "youtube": "SdInJ2evd1U?start=18"
       },
       {
         "name": "Single-hand collar grab defense (wrist fold)",
         "note": "When they grab the collar, slap the wrist to fold it while grabbing the elbow into a wrist lock. Turn sideways to finish the lock.",
-        "youtube": "hMTEECxtz9A?start=218"
+        "youtube": "hMTEECxtz9A?start=218",
+        "bold": true
+      },
+      {
+        "name": "Single-Hand Lapel Grab Defense (palm turned up)",
+        "note": " high lapel grab, wrist lock with leg trip",
+        "youtube": "JBk6mHwDIZE?start=7"
       },
       {
         "name": "Single-hand collar grab defense (straight arm)",
         "note": "When grabbed high in the collar, secure the wrist with thumbs up. With a firm grip, spin around with the attacker's forearm over your shoulder and lean forward for the straight arm. Raise your shoulder to prevent the attacker's arm from slipping out.",
-        "youtube": "toCEO1dz69w?start=6"
+        "youtube": "toCEO1dz69w?start=6",
+        "bold": true
+      },
+      {
+        "name": "Single-Hand Lapel Grab Defense (thumb down)",
+        "note": "with thumb facing down (straight arm) waki gatame",
+        "youtube": "s4nyFGl_ux8?start=7"
       },
       {
         "name": "Single-hand chest-push defense",
         "note": "Grab the elbow and on the top of the wrist. Step in to wrist lock, close the distance to avoid punches.",
-        "youtube": "VbjlRr71ueo?start=92"
+        "youtube": "VbjlRr71ueo?start=92",
+        "bold": true
       },
       {
         "name": "Double-collar grab defense (hands apart)",
         "note": "Swim arms up through the middle and over the attacker's arms. Do a vicious hip throw or leg sweep and break the arm in the mean streets.",
-        "youtube": "y0Py14l706Q?start=4"
+        "youtube": "y0Py14l706Q?start=4",
+        "bold": true
       },
       {
         "name": "Double-collar grab defense (hands together)",
         "note": "Make a fist and block the attacker's wrist and grab your own wrist. Turn your body and viciously rip their grips off of you. Back elbow to the face.",
-        "youtube": "_g54PeiAtPc?start=4"
+        "youtube": "_g54PeiAtPc?start=4",
+        "bold": true
       },
       {
         "name": "Shoulder grab defense (arm bent)",
         "note": "When grabbed, throw your arm around theirs and shoulder lock them.",
-        "youtube": "oIT4Y3TSTKI?start=18"
+        "youtube": "oIT4Y3TSTKI?start=18",
+        "bold": true
       },
       {
         "name": "Shoulder grab defense (straight arm)",
         "note": "If the person straightens their arm, step in front of them and do a standing arm bar.",
-        "youtube": "toCEO1dz69w?start=11"
+        "youtube": "toCEO1dz69w?start=11",
+        "bold": true
+      },
+      {
+        "name": "Headlock Defense (with punch)",
+        "note": "grab wrist and elbow, hips in, go under arm to bent arm lock",
+        "youtube": "fuPmbVatB9Q"
+      },
+      {
+        "name": "Headlock Defense (attacker upright)",
+        "note": "cup chin, look up, squat and lift leg",
+        "youtube": "knmZ0Tq79Qc"
       },
       {
         "name": "Headlock defense (attacker bent over)",
         "note": "Secure the arm so you are not punched. Step in front and grab the far leg. Step through the attacker's legs to sit down and roll the attacker over.",
-        "youtube": "zvKL3vVsc2E?start=7"
+        "youtube": "zvKL3vVsc2E?start=7",
+        "bold": true
       },
       {
         "name": "Headlock defense (attacker with wide stance)",
         "note": "There are two. The \"nice\" way is to control the punching side. Take your leg and block behind their far leg and sit down and transition to mount. The \"meaner\" way is to control the inside leg and sit through (attacker goes to their head).",
-        "youtube": "xcUQYElqkOA?start=6"
+        "youtube": "xcUQYElqkOA?start=6",
+        "bold": true
       },
       {
         "name": "Headlock defense (pressure on the nose)",
-        "note": "From the headlock, reach up and grab the chin and pull it back to make the leg light. Grab the leg, pick the attacker up and smash them on the ground. Hands across the body and extend to break the grip.",
-        "youtube": "knmZ0Tq79Qc?start=10"
+        "note": "From the headlock, reach up and over the attacker's head to the wall. Hook the leg and straighten your back to break the headlock.",
+        "youtube": "knmZ0Tq79Qc?start=10",
+        "bold": true
+      },
+      {
+        "name": "Headlock defense against a wall (attacker outside)",
+        "note": "Push in to the attacker and scoop the leg. Run the pipe away from the wall.",
+        "youtube": "bEv-x569rio?start=8",
+        "bold": true
       },
       {
         "name": "Headlock defense against a wall (attacker inside)",
         "note": "Push in to the attacker and scoop the leg. Run the pipe away from the wall.",
-        "youtube": "z9h7hxgwuiM?start=8"
+        "youtube": "z9h7hxgwuiM?start=8",
+        "bold": true
+      },
+      {
+        "name": "Guillotine Defense (sitting back)",
+        "note": "both hands on one knee and sit and bridge",
+        "youtube": "k5BNGdsb5P4"
       },
       {
         "name": "Guillotine defense (sliding down)",
         "note": "Outside arm over shoulder, inside hand on knee. Hop and sit through so the attacker goes over you.",
-        "youtube": "WfslUGStwiM?start=4"
+        "youtube": "WfslUGStwiM?start=4",
+        "bold": true
+      },
+      {
+        "name": "Guillotine Defense (with trip takedown)",
+        "note": "arm over shoulder, weight down and buckle the knee",
+        "youtube": "NAQiiqd_vu4"
+      },
+      {
+        "name": "Guillotine Choke",
+        "note": "wrist to shoulder, knee to mid-section to maintain distance, then pull into guard",
+        "youtube": "1k_IT9_eUy8"
       },
       {
         "name": "Guillotine choke (if taken down)",
         "note": "Finish the guillotine. 😂",
-        "youtube": "G6vRPzh3iaw?start=3"
+        "youtube": "G6vRPzh3iaw?start=3",
+        "bold": true
       },
       {
         "name": "Tackle defense (with elbow strike)",
         "note": "Block both shoulders and then downward elbow strike to the spine.",
-        "youtube": "3AWTffF6E8c?start=3"
+        "youtube": "3AWTffF6E8c?start=3",
+        "bold": true
       },
       {
         "name": "Tackle defense (with knee strike)",
         "note": "Block both shoulders, knee to the face.",
-        "youtube": "AXuazYONF2I?start=3"
+        "youtube": "AXuazYONF2I?start=3",
+        "bold": true
       },
       {
         "name": "Haymaker punch defense",
         "note": "Duck under the punch so the attacker goes over your back. Grab their ankles to assist them going over you.",
-        "youtube": "wdf3IITVenQ"
+        "youtube": "wdf3IITVenQ",
+        "bold": true
       },
       {
         "name": "Front kick defense (with pivot)",
         "note": "When they kick, push the leg inside and step outside with a pivot.",
-        "youtube": "DRdd3gOGf08?start=3"
+        "youtube": "DRdd3gOGf08?start=3",
+        "bold": true
       },
       {
         "name": "Roundhouse kick defense",
         "note": "Step away from the kick and catch the leg (don't do the thing in the video--too many MMA watchers). Figure four the leg and toss the attacker down. Knee bar.",
-        "youtube": "pyj_nLJz2aQ?start=3"
+        "youtube": "pyj_nLJz2aQ?start=3",
+        "bold": true
       },
       {
         "name": "Hand chop",
         "note": "Run your hands through your hair and then hand chop to the neck.",
-        "youtube": "zRrlD6kf2QY?start=3"
+        "youtube": "zRrlD6kf2QY?start=3",
+        "bold": true
       },
       {
         "name": "Punch",
         "note": "Punch them in the face",
-        "youtube": "zRrlD6kf2QY?start=7"
+        "youtube": "zRrlD6kf2QY?start=7",
+        "bold": true
       },
       {
         "name": "Elbow strike",
         "note": "Elbow strike to the face",
-        "youtube": "zRrlD6kf2QY?start=10"
+        "youtube": "zRrlD6kf2QY?start=10",
+        "bold": true
       },
       {
         "name": "Side kick (surprise attack)",
         "note": "Surprise the attacker and kick them in the knee. Forward let kicks their forward leg; 45° angle for the foot; contact in the middle of the foot.",
-        "youtube": "l2SfqXo4MY8"
+        "youtube": "l2SfqXo4MY8",
+        "bold": true
       },
       {
         "name": "Side kick",
         "note": "Same side kick, but use timing (bait by moving backwards).",
-        "youtube": "rnBzvQw2yfw"
+        "youtube": "rnBzvQw2yfw",
+        "bold": true
       }
     ]
   },
@@ -140,22 +232,26 @@
       {
         "name": "Rear choke defense pulled back (with overhead throw)",
         "note": "Address choke and make base. Move to the side and leg sweep.",
-        "youtube": "dTIDRA-0YY0?start=16"
+        "youtube": "dTIDRA-0YY0?start=16",
+        "bold": true
       },
       {
         "name": "Rear two-hand choke defense",
         "note": "Gator neck and reach back to get the wrist and lean to one side. Keep twisting the wrist to the ground.",
-        "youtube": "X1OHCn9nMbw?start=4"
+        "youtube": "X1OHCn9nMbw?start=4",
+        "bold": true
       },
       {
         "name": "Rear bear hug over the arms defense (with wide stance)",
         "note": "Make base and step behind the legs. Grab their legs and throw the attacker.",
-        "youtube": "wAgEkur44zM?start=3"
+        "youtube": "wAgEkur44zM?start=3",
+        "bold": true
       },
       {
         "name": "Full nelson defense",
         "note": "Make base and pull your arms down. When the grips break, turn toward attacker.",
-        "youtube": "Yid9svNqnE0"
+        "youtube": "Yid9svNqnE0",
+        "bold": true
       }
     ]
   }
