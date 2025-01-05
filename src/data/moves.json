@@ -177,10 +177,30 @@
         "bold": true
       },
       {
+        "name": "Rear Bear Hug Defense (over the arms)",
+        "note": "be sure to have hips engaged",
+        "youtube": "R1uq23u464A"
+      },
+      {
+        "name": "Front Bear Hug Defense (under the arms with frame)",
+        "note": "frame face drop back",
+        "youtube": "5uFxsir7z0k"
+      },
+      {
+        "name": "Sucker Punch Defense",
+        "note": "Roundhouse punch close and lunging punch and straight punch",
+        "youtube": "zkckGH9tY5Y?start=7"
+      },
+      {
         "name": "Haymaker punch defense",
         "note": "Duck under the punch so the attacker goes over your back. Grab their ankles to assist them going over you.",
         "youtube": "wdf3IITVenQ",
         "bold": true
+      },
+      {
+        "name": "Front Kick Defense (to mid-section)",
+        "note": "Absorb, step back, catch, cup heel and lift",
+        "youtube": "5hDtFcnyYeo?start=11"
       },
       {
         "name": "Front kick defense (with pivot)",
@@ -189,10 +209,20 @@
         "bold": true
       },
       {
+        "name": "Front kick defense (High)",
+        "note": "Block with hand on hip and cover head, go to foot lock",
+        "youtube": "1WZKjbtgt30?start=7"
+      },
+      {
         "name": "Roundhouse kick defense",
         "note": "Step away from the kick and catch the leg (don't do the thing in the video--too many MMA watchers). Figure four the leg and toss the attacker down. Knee bar.",
         "youtube": "pyj_nLJz2aQ?start=3",
         "bold": true
+      },
+      {
+        "name": "Standing up in base",
+        "note": "Stand up---in base",
+        "youtube": "DO0nHTCk_jY?start=10"
       },
       {
         "name": "Hand chop",
@@ -230,6 +260,16 @@
     "label": "Standing Defenses from Behind",
     "moves": [
       {
+        "name": "Rear Choke Defense",
+        "note": "walk backwards and throw over shoulder",
+        "youtube": "0ysRO0VS33I"
+      },
+      {
+        "name": "Rear Choke Defense Pulled Back (with side throw)",
+        "note": "elbow tight to chest, reap leg and bow",
+        "youtube": "dTIDRA-0YY0"
+      },
+      {
         "name": "Rear choke defense pulled back (with overhead throw)",
         "note": "Address choke and make base. Move to the side and leg sweep.",
         "youtube": "dTIDRA-0YY0?start=16",
@@ -242,10 +282,20 @@
         "bold": true
       },
       {
+        "name": "Rear Bear Hug Defense (over the arms)",
+        "note": "be sure to have hips engaged",
+        "youtube": "R1uq23u464A"
+      },
+      {
         "name": "Rear bear hug over the arms defense (with wide stance)",
         "note": "Make base and step behind the legs. Grab their legs and throw the attacker.",
         "youtube": "wAgEkur44zM?start=3",
         "bold": true
+      },
+      {
+        "name": "Rear Bear Hug under arms defense",
+        "note": "hook outside leg with foot",
+        "youtube": "6JbM5wUOTRI"
       },
       {
         "name": "Full nelson defense",
