@@ -32,7 +32,7 @@ function App() {
     // Send pageview with a custom path
     ReactGA.send({
       hitType: "pageview",
-      page: "/blue-to-purplse",
+      page: "/blue-to-purple",
       title: "Blue to Purple",
     });
   }, []);
