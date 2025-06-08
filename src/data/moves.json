@@ -5,34 +5,40 @@
       {
         "name": "Hip throw",
         "note": "From T-position, step foot between, swivel hips and then go farther out to get hips in.",
-        "youtube": "3XdoMTbPGkc?start=11"
+        "youtube": "3XdoMTbPGkc?start=11",
+        "group": "throws"
       },
       {
         "name": "Two-hand front choke defense (Bend at Hips)",
         "note": "Flex your neck; down and around the hands",
-        "youtube": "70l_wIaC7D4?start=21"
+        "youtube": "70l_wIaC7D4?start=21",
+        "group": "front choke"
       },
       {
         "name": "Two-Handed Lapel Grab Defense (with hip throw)",
         "note": "high grab to head and arm hip throw",
-        "youtube": "9QA0L4aOOKk?start=10"
+        "youtube": "9QA0L4aOOKk?start=10",
+        "group": "front choke"
       },
       {
         "name": "Two-hand front choke defense (with arm lock)",
         "note": "When grabbed by the neck, heart grip around wrist. Establish base and lean forward to secure the hand, twising it out to create tension. Step forward and under the arm and then behind the attacker. Finish in an arm lock.",
         "youtube": "C4_OsZPCnNc?start=6",
-        "bold": true
+        "bold": true,
+        "group": "front choke"
       },
       {
         "name": "Two-hand front choke defense (against a wall)",
         "note": "Reach behind and grab a wrist with on hand and at least one finger with the other. When you get one, grab the wrist with your free hand and pin against chest. Lean forward for the break.",
         "youtube": "mQuw_0jbGlk?start=7",
-        "bold": true
+        "bold": true,
+        "group": "front choke"
       },
       {
         "name": "Single Hand Front Choke Defense (against wall)",
         "note": "strike wrist, turn, elbow to head",
-        "youtube": "DFNbQsnY5G8?start=8"
+        "youtube": "DFNbQsnY5G8?start=8",
+        "group": "front choke"
       },
       {
         "name": "Wall-pin defense",
@@ -310,8 +316,18 @@
       {
         "name": "Full nelson defense",
         "note": "Make base and pull your arms down. When the grips break, turn toward attacker.",
-        "youtube": "Yid9svNqnE0",
+        "youtube": "Yid9svNqnE0?start=4",
         "bold": true
+      }
+    ]
+  },
+  {
+    "label": "Club Defense",
+    "moves": [
+      {
+        "name": "Club defense (overhead close range",
+        "note": "",
+        "youtube": "XXFY1J807gM?start=566"
       }
     ]
   }

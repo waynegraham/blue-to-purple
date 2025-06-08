@@ -58,7 +58,7 @@ function App() {
             move // Map through moves data
           ) => (
             <div key={move.label}>
-              <h2 className="my-3 text-xl text-gray-900 dark:text-gray-300">
+              <h2 className="my-3 text-2xl text-gray-900 dark:text-gray-300">
                 {move.label}
               </h2>
               <ul className="list-disc ps-5 mt-2 space-y-1 dark:text-gray-300">
@@ -72,9 +72,8 @@ function App() {
                         className="text-purple-600 dark:text-purple-300 hover:underline"
                       >
                         <span className={m.bold ? "font-bold" : ""}>
-                        {m.name}
-                    </span>
-                        
+                          {m.name}
+                        </span>
                       </a>
                       <span className="ml-1 dark:text-gray-300">
                         - {m.note}
