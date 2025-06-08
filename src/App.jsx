@@ -48,6 +48,10 @@ function App() {
           Purple Belt Demonstration
         </h2>
 
+        <p>
+          <a target="_blank" className="text-purple-600 dark:text-purple-300 underline" href="https://waynegraham.github.io/bjj-study-guide/gracie-jiu-jitsu_compress.pdf">Reference</a>
+        </p>
+
         {/* <h1 className="text-xl text-purple-800 dark:text-purple-400 font-semibold">Test Requirements</h1> */}
         {movesData.map(
           (

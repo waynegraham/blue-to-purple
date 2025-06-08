@@ -25,14 +25,14 @@
       },
       {
         "name": "Two-hand front choke defense (against a wall)",
-        "note": "Reach behind and grab at least one finger. When you get one, grab the wrist with your free hand and pin against chest. Lean forward for the break.",
+        "note": "Reach behind and grab a wrist with on hand and at least one finger with the other. When you get one, grab the wrist with your free hand and pin against chest. Lean forward for the break.",
         "youtube": "mQuw_0jbGlk?start=7",
         "bold": true
       },
       {
         "name": "Single Hand Front Choke Defense (against wall)",
         "note": "strike wrist, turn, elbow to head",
-        "youtube": "DFNbQsnY5G8"
+        "youtube": "DFNbQsnY5G8?start=8"
       },
       {
         "name": "Wall-pin defense",
@@ -100,12 +100,12 @@
       {
         "name": "Headlock Defense (with punch)",
         "note": "grab wrist and elbow, hips in, go under arm to bent arm lock",
-        "youtube": "fuPmbVatB9Q"
+        "youtube": "fuPmbVatB9Q?start=8"
       },
       {
         "name": "Headlock Defense (attacker upright)",
         "note": "cup chin, look up, squat and lift leg",
-        "youtube": "knmZ0Tq79Qc"
+        "youtube": "knmZ0Tq79Qc?start=10"
       },
       {
         "name": "Headlock defense (attacker bent over)",
@@ -140,7 +140,7 @@
       {
         "name": "Guillotine Defense (sitting back)",
         "note": "both hands on one knee and sit and bridge",
-        "youtube": "k5BNGdsb5P4"
+        "youtube": "k5BNGdsb5P4?start=7"
       },
       {
         "name": "Guillotine defense (sliding down)",
@@ -151,7 +151,7 @@
       {
         "name": "Guillotine Defense (with trip takedown)",
         "note": "arm over shoulder, weight down and buckle the knee",
-        "youtube": "NAQiiqd_vu4"
+        "youtube": "NAQiiqd_vu4?start=15"
       },
       {
         "name": "Guillotine Choke",
@@ -173,28 +173,33 @@
       {
         "name": "Tackle defense (with knee strike)",
         "note": "Block both shoulders, knee to the face.",
-        "youtube": "AXuazYONF2I?start=3",
+        "youtube": "iGtS8Im-1k8?start=3",
         "bold": true
       },
       {
-        "name": "Rear Bear Hug Defense (over the arms)",
-        "note": "be sure to have hips engaged",
-        "youtube": "R1uq23u464A"
+        "name": "Front bear hug over the arms",
+        "note": "Base, put arms up and transition into hip throw",
+        "youtube": "iGtS8Im-1k8?start=9"
       },
       {
-        "name": "Front Bear Hug Defense (under the arms with frame)",
+        "name": "Front bear hug defense under the arms (with frame)",
+        "note": "frame face base back",
+        "youtube": "5uFxsir7z0k?start=13"
+      },
+      {
+        "name": "Front bear hug defense under the arms (with chin push)",
         "note": "frame face drop back",
-        "youtube": "5uFxsir7z0k"
+        "youtube": "olslu7LKIpE?start=6"
       },
       {
-        "name": "Sucker Punch Defense",
+        "name": "Sucker punch defense",
         "note": "Roundhouse punch close and lunging punch and straight punch",
-        "youtube": "zkckGH9tY5Y?start=7"
+        "youtube": "zkckGH9tY5Y?start=22"
       },
       {
         "name": "Haymaker punch defense",
         "note": "Duck under the punch so the attacker goes over your back. Grab their ankles to assist them going over you.",
-        "youtube": "wdf3IITVenQ",
+        "youtube": "wdf3IITVenQ?start=3",
         "bold": true
       },
       {
@@ -245,13 +250,13 @@
       {
         "name": "Side kick (surprise attack)",
         "note": "Surprise the attacker and kick them in the knee. Forward let kicks their forward leg; 45° angle for the foot; contact in the middle of the foot.",
-        "youtube": "l2SfqXo4MY8",
+        "youtube": "l2SfqXo4MY8?start=3",
         "bold": true
       },
       {
         "name": "Side kick",
         "note": "Same side kick, but use timing (bait by moving backwards).",
-        "youtube": "rnBzvQw2yfw",
+        "youtube": "rnBzvQw2yfw?start=26",
         "bold": true
       }
     ]
@@ -262,17 +267,17 @@
       {
         "name": "Rear Choke Defense",
         "note": "walk backwards and throw over shoulder",
-        "youtube": "0ysRO0VS33I"
+        "youtube": "yprgguhaWvo?start=5"
       },
       {
         "name": "Rear Choke Defense Pulled Back (with side throw)",
         "note": "elbow tight to chest, reap leg and bow",
-        "youtube": "dTIDRA-0YY0"
+        "youtube": "dTIDRA-0YY0?start=17"
       },
       {
         "name": "Rear choke defense pulled back (with overhead throw)",
         "note": "Address choke and make base. Move to the side and leg sweep.",
-        "youtube": "dTIDRA-0YY0?start=16",
+        "youtube": "yprgguhaWvo?start=5",
         "bold": true
       },
       {
@@ -284,7 +289,7 @@
       {
         "name": "Rear Bear Hug Defense (over the arms)",
         "note": "be sure to have hips engaged",
-        "youtube": "R1uq23u464A"
+        "youtube": "R1uq23u464A?start=15"
       },
       {
         "name": "Rear bear hug over the arms defense (with wide stance)",
@@ -296,6 +301,11 @@
         "name": "Rear Bear Hug under arms defense",
         "note": "hook outside leg with foot",
         "youtube": "6JbM5wUOTRI"
+      },
+      {
+        "name": "Rear Bear Hug under arms defense (with lift)",
+        "note": "hook outside leg with foot",
+        "youtube": "6JbM5wUOTRI?start=10"
       },
       {
         "name": "Full nelson defense",
