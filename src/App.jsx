@@ -35,21 +35,34 @@ function App() {
       page: "/blue-to-purple",
       title: "Blue to Purple",
     });
-  }, []);
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape' && isModalOpen) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    };
+  }, [isModalOpen]);
 
   return (
     <section className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <Navigation /> {/* Navigation bar */}
       <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-2">
-        <h1 className="inline-block font-extrabold bg-gradient-to-r from-blue-400 to-purple-800 bg-clip-text text-7xl text-transparent">
+        <h1 className="inline-block font-extrabold bg-gradient-to-r from-blue-400 to-purple-800 bg-clip-text text-7xl print:text-5xl text-transparent print:bg-none print:text-black print:bg-clip-border">
           Blue to Purple
         </h1>
+
         <h2 className="inline-block mt-5 mb-8 text-purple-600 dark:text-purple-300 text-2xl font-semibold tracking-tighter">
           Purple Belt Demonstration
         </h2>
 
         <p>
-          <a target="_blank" className="text-purple-600 dark:text-purple-300 underline" href="https://waynegraham.github.io/bjj-study-guide/gracie-jiu-jitsu_compress.pdf">Reference</a>
+          <a target="_blank" className="print:hidden text-purple-600 dark:text-purple-300 underline" href="https://waynegraham.github.io/bjj-study-guide/gracie-jiu-jitsu_compress.pdf">Reference</a>
         </p>
 
         {/* <h1 className="text-xl text-purple-800 dark:text-purple-400 font-semibold">Test Requirements</h1> */}
