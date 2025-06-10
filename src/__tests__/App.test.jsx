@@ -13,3 +13,11 @@ test('clicking a move displays its modal', () => {
   fireEvent.click(firstMove);
   expect(screen.getByRole('heading', { name: 'Hip throw' })).toBeInTheDocument();
 });
+
+test('filters moves based on search input', () => {
+  render(<App />);
+  const input = screen.getByPlaceholderText('Search');
+  fireEvent.change(input, { target: { value: 'guillotine' } });
+  expect(screen.getByText('Guillotine Choke')).toBeInTheDocument();
+  expect(screen.queryByText('Hip throw')).not.toBeInTheDocument();
+});
