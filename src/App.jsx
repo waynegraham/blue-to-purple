@@ -73,11 +73,11 @@ function App() {
       <Navigation /> {/* Navigation bar */}
       <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-2">
         <h1 className="inline-block font-extrabold bg-gradient-to-r from-blue-400 to-purple-800 bg-clip-text text-7xl print:text-5xl text-transparent print:bg-none print:text-black print:bg-clip-border">
-          Blue to Purple
+          Blue to Purple <span className='text-3xl'>Curriculum Techniques</span>
         </h1>
 
         <h2 className="inline-block mt-5 mb-8 text-purple-600 dark:text-purple-300 text-2xl font-semibold tracking-tighter">
-          Purple Belt Demonstration
+          Purple Belt Demonstration 
         </h2>
 
         <p>
@@ -108,7 +108,7 @@ function App() {
                     <li key={m.name}>
                       <a
                         onClick={() => openModal(m.youtube, m.name)} // Open modal on click
-                        className="hover:underline"
+                        className="hover:underline print:text-black"
                       >
                         <span className={m.bold ? "text-purple-600 dark:text-purple-300 dark:hover:text-purple-200" : "text-blue-600 dark:text-blue-400 dark:hover:text-blue-200" }>
                           {m.name}
