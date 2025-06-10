@@ -14,6 +14,7 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedVideoId, setSelectedVideoId] = useState("");
   const [modalTitle, setModalTitle] = useState(""); // State for modal title
+  const [searchTerm, setSearchTerm] = useState("");
 
   const openModal = (videoId, title) => {
     setSelectedVideoId(videoId);
@@ -49,6 +50,24 @@ function App() {
     };
   }, [isModalOpen]);
 
+  const filteredData = movesData
+    .map((section) => {
+      const labelMatch = section.label
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase());
+      const moves = section.moves.filter((m) =>
+        `${m.name} ${m.note}`.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      if (labelMatch) {
+        return section;
+      }
+      if (moves.length > 0) {
+        return { ...section, moves };
+      }
+      return null;
+    })
+    .filter(Boolean);
+
   return (
     <section className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <Navigation /> {/* Navigation bar */}
@@ -64,9 +83,16 @@ function App() {
         <p>
           <a target="_blank" className="print:hidden text-purple-600 dark:text-purple-300 underline" href="https://waynegraham.github.io/bjj-study-guide/gracie-jiu-jitsu_compress.pdf">Reference</a>
         </p>
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="mt-4 mb-4 rounded border p-2 text-black dark:text-black"
+        />
 
         {/* <h1 className="text-xl text-purple-800 dark:text-purple-400 font-semibold">Test Requirements</h1> */}
-        {movesData.map(
+        {filteredData.map(
           (
             move // Map through moves data
           ) => (
