@@ -108,9 +108,9 @@ function App() {
                     <li key={m.name}>
                       <a
                         onClick={() => openModal(m.youtube, m.name)} // Open modal on click
-                        className="text-purple-600 dark:text-purple-300 hover:underline"
+                        className="hover:underline"
                       >
-                        <span className={m.bold ? "font-bold" : ""}>
+                        <span className={m.bold ? "text-purple-600 dark:text-purple-300 dark:hover:text-purple-200" : "text-blue-600 dark:text-blue-400 dark:hover:text-blue-200" }>
                           {m.name}
                         </span>
                       </a>
