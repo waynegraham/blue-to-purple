@@ -88,7 +88,7 @@ function App() {
           placeholder="Search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="mt-4 mb-4 rounded border p-2 text-black dark:text-black"
+          className="mt-4 mb-4 rounded border p-2 text-black dark:text-black print:hidden"
         />
 
         {/* <h1 className="text-xl text-purple-800 dark:text-purple-400 font-semibold">Test Requirements</h1> */}
