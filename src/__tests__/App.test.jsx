@@ -9,27 +9,27 @@ jest.mock('react-ga4', () => ({
 
 test('clicking a move displays its modal', () => {
   render(<App />);
-  const firstMove = screen.getByText('Hip throw');
+  const firstMove = screen.getByText('T-Position Hip Throw');
   fireEvent.click(firstMove);
-  expect(screen.getByRole('heading', { name: 'Hip throw' })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'T-Position Hip Throw' })).toBeInTheDocument();
 });
 
 test('clicking the close button hides the modal', () => {
   render(<App />);
-  const firstMove = screen.getByText('Hip throw');
+  const firstMove = screen.getByText('T-Position Hip Throw');
   fireEvent.click(firstMove);
-  expect(screen.getByRole('heading', { name: 'Hip throw' })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'T-Position Hip Throw' })).toBeInTheDocument();
   const closeButton = screen.getByRole('button', { name: /close/i });
   fireEvent.click(closeButton);
-  expect(screen.queryByRole('heading', { name: 'Hip throw' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('heading', { name: 'T-Position Hip Throw' })).not.toBeInTheDocument();
 });
 
 test('filters moves based on search input', () => {
   render(<App />);
   const input = screen.getByPlaceholderText('Search');
   fireEvent.change(input, { target: { value: 'guillotine' } });
-  expect(screen.getByText('Guillotine Choke')).toBeInTheDocument();
-  expect(screen.queryByText('Hip throw')).not.toBeInTheDocument();
+  expect(screen.getAllByText('Guillotine Choke').length).toBeGreaterThan(0);
+  expect(screen.queryByText('T-Position Hip Throw')).not.toBeInTheDocument();
 });
 
 
