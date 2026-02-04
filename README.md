@@ -1,24 +1,30 @@
 # Blue to Purple Curriculum Review
 
-> Review and Study Guide for PSBJJ Blue-to-Purple Belt Demonstration
+Review and study guide for the PSBJJ blue-to-purple belt demonstration curriculum.
 
-## Features
+## Highlights
 
-- Searchable list of Brazilian Jiu-Jitsu techniques organized by category and belt level.
-- Embedded YouTube video demonstrations for each technique.
-- Dark/light mode toggle powered by Flowbite React and Tailwind CSS.
-- Print-friendly design for offline reference or handouts.
-- Responsive layout for mobile and desktop viewing.
-- Google Analytics (GA4) integration to track usage.
-- Built with React, Vite, Tailwind CSS, and Flowbite.
+- Searchable curriculum organized by section with notes for each technique.
+- YouTube video modal for technique demos.
+- Dark/light mode toggle (Flowbite React) and print-friendly layout.
+- Responsive, single-page React app built with Vite + Tailwind CSS.
+- GA4 pageview tracking via `react-ga4`.
 
-## Demo
+## Live Demo
 
-Live demo hosted on GitHub Pages: [https://waynegraham.github.io/blue-to-purple](https://waynegraham.github.io/blue-to-purple)
+GitHub Pages: https://waynegraham.github.io/blue-to-purple
 
-## Installation
+## Project Structure
 
-Install dependencies using [pnpm](https://pnpm.io/) (recommended) or npm:
+- `src/App.jsx`: page layout, search/filter logic, video modal, GA4 pageview.
+- `src/data/moves.json`: curriculum data (labels, notes, YouTube IDs).
+- `src/components/Navigation.jsx`: belt navigation + theme toggle.
+- `src/components/Footer.jsx`: footer links + license blurb.
+- `src/__tests__/`: Jest + React Testing Library tests.
+
+## Setup
+
+Install dependencies using pnpm (recommended) or npm:
 
 ```bash
 pnpm install
@@ -28,19 +34,15 @@ npm install
 
 ## Development
 
-Start the development server with hot module replacement:
-
 ```bash
 pnpm dev
 # or
 npm run dev
 ```
 
-Open <http://localhost:5173> to view the app in your browser.
+Vite runs at http://localhost:5173 by default.
 
 ## Build and Preview
-
-Build the production bundle and preview locally:
 
 ```bash
 pnpm build
@@ -52,8 +54,6 @@ npm run preview
 
 ## Linting
 
-Run ESLint to check for linting issues:
-
 ```bash
 pnpm lint
 # or
@@ -62,17 +62,19 @@ npm run lint
 
 ## Testing
 
-Run unit tests with Jest:
-
 ```bash
 pnpm test
 # or
 npm test
 ```
 
+## Deployment
+
+On pushes to `main`, GitHub Actions builds the Vite app and deploys to GitHub Pages (`.github/workflows/deploy.yml`).
+
 ## Reference
 
-- [PSBJJ Study Guide PDF](https://waynegraham.github.io/bjj-study-guide/gracie-jiu-jitsu_compress.pdf) - Official curriculum PDF.
+PSBJJ Study Guide PDF: https://waynegraham.github.io/bjj-study-guide/gracie-jiu-jitsu_compress.pdf
 
 ## License
 
