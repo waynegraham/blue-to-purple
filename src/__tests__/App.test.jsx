@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { MemoryRouter } from 'react-router-dom';
 import App from '../App';
 
 jest.mock('react-ga4', () => ({
@@ -7,15 +8,25 @@ jest.mock('react-ga4', () => ({
   send: jest.fn(),
 }));
 
+const renderWithRouter = (ui, { route = '/' } = {}) =>
+  render(
+    <MemoryRouter
+      initialEntries={[route]}
+      future={{ v7_relativeSplatPath: true }}
+    >
+      {ui}
+    </MemoryRouter>
+  );
+
 test('clicking a move displays its modal', () => {
-  render(<App />);
+  renderWithRouter(<App />);
   const firstMove = screen.getByText('T-Position Hip Throw');
   fireEvent.click(firstMove);
   expect(screen.getByRole('heading', { name: 'T-Position Hip Throw' })).toBeInTheDocument();
 });
 
 test('clicking the close button hides the modal', () => {
-  render(<App />);
+  renderWithRouter(<App />);
   const firstMove = screen.getByText('T-Position Hip Throw');
   fireEvent.click(firstMove);
   expect(screen.getByRole('heading', { name: 'T-Position Hip Throw' })).toBeInTheDocument();
@@ -25,11 +36,9 @@ test('clicking the close button hides the modal', () => {
 });
 
 test('filters moves based on search input', () => {
-  render(<App />);
+  renderWithRouter(<App />);
   const input = screen.getByPlaceholderText('Search');
   fireEvent.change(input, { target: { value: 'guillotine' } });
   expect(screen.getAllByText('Guillotine Choke').length).toBeGreaterThan(0);
   expect(screen.queryByText('T-Position Hip Throw')).not.toBeInTheDocument();
 });
-
-
