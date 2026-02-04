@@ -12,7 +12,7 @@ const renderWithRouter = (ui, { route = '/' } = {}) =>
   render(
     <MemoryRouter
       initialEntries={[route]}
-      future={{ v7_relativeSplatPath: true }}
+      future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
     >
       {ui}
     </MemoryRouter>
@@ -30,7 +30,7 @@ test('clicking the close button hides the modal', () => {
   const firstMove = screen.getByText('T-Position Hip Throw');
   fireEvent.click(firstMove);
   expect(screen.getByRole('heading', { name: 'T-Position Hip Throw' })).toBeInTheDocument();
-  const closeButton = screen.getByRole('button', { name: /close/i });
+  const closeButton = screen.getByRole('button', { name: /close modal/i });
   fireEvent.click(closeButton);
   expect(screen.queryByRole('heading', { name: 'T-Position Hip Throw' })).not.toBeInTheDocument();
 });

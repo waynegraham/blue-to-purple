@@ -6,7 +6,6 @@ import movesData from "../data/moves.json";
 import ReactGA from "react-ga4";
 
 function HomePage() {
-  ReactGA.initialize("yG-BY5PHZWJXB");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedVideoId, setSelectedVideoId] = useState("");
@@ -25,8 +24,6 @@ function HomePage() {
   };
 
   useEffect(() => {
-    ReactGA.initialize("yG-BY5PHZWJXB");
-
     ReactGA.send({
       hitType: "pageview",
       page: "/blue-to-purple",
@@ -111,7 +108,8 @@ function HomePage() {
             <ul className="list-disc ps-5 mt-2 space-y-1 dark:text-gray-300">
               {move.moves.map((m) => (
                 <li key={m.name}>
-                  <a
+                  <button
+                    type="button"
                     onClick={() => openModal(m.youtube, m.name)}
                     className="hover:underline print:text-black"
                   >
@@ -124,7 +122,7 @@ function HomePage() {
                     >
                       {m.name}
                     </span>
-                  </a>
+                  </button>
                   <span className="ml-1 dark:text-gray-300">- {m.note}</span>
                 </li>
               ))}
@@ -134,14 +132,23 @@ function HomePage() {
 
         {isModalOpen && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-white dark:bg-black w-11/12 h-11/12 flex flex-col rounded-lg">
+            <div
+              className="relative bg-white dark:bg-black w-11/12 h-11/12 flex flex-col rounded-lg"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="video-modal-title"
+            >
               <button
+                type="button"
                 onClick={closeModal}
                 className="absolute top-2 right-2 dark:text-white"
+                aria-label="Close modal"
               >
                 X
               </button>
-              <h2 className="text-xl font-semibold mb-2">{modalTitle}</h2>
+              <h2 id="video-modal-title" className="text-xl font-semibold mb-2">
+                {modalTitle}
+              </h2>
               <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
@@ -154,6 +161,7 @@ function HomePage() {
               </div>
               <div className="flex justify-center mt-4">
                 <button
+                  type="button"
                   onClick={closeModal}
                   className="bg-indigo-500 text-white px-4 py-2 my-2 rounded"
                 >
