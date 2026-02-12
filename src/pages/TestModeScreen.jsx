@@ -19,10 +19,18 @@ const buildYoutubeUrl = (youtube) => {
 };
 
 function TestModeScreen() {
+  const SWIPE_DISTANCE_THRESHOLD = 70;
+  const SWIPE_VELOCITY_THRESHOLD = 0.35;
+  const WHEEL_DISTANCE_THRESHOLD = 85;
+  const WHEEL_VELOCITY_THRESHOLD = 0.45;
+  const WHEEL_NAVIGATION_COOLDOWN_MS = 320;
+
   const navigate = useNavigate();
   const containerRef = useRef(null);
   const recognitionRef = useRef(null);
   const restartTimeoutRef = useRef(null);
+  const wheelGestureRef = useRef({ x: 0, y: 0, lastTime: 0 });
+  const lastWheelNavigationRef = useRef(0);
   const wantsListeningRef = useRef(false);
   const stoppingRef = useRef(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -109,12 +117,34 @@ function TestModeScreen() {
     </span>
   );
 
+  const goFromGesture = useCallback(
+    (direction) => {
+      if (direction === "Up" || direction === "Right") {
+        goNext();
+        return;
+      }
+      if (direction === "Down" || direction === "Left") {
+        goPrevious();
+      }
+    },
+    [goNext, goPrevious]
+  );
+
   const swipeHandlers = useSwipeable({
-    onSwipedDown: goNext,
-    onSwipedUp: goPrevious,
+    onSwiped: ({ dir, absX, absY, velocity }) => {
+      const isHorizontalSwipe = absX >= absY;
+      const distance = isHorizontalSwipe ? absX : absY;
+      if (
+        distance < SWIPE_DISTANCE_THRESHOLD &&
+        velocity < SWIPE_VELOCITY_THRESHOLD
+      ) {
+        return;
+      }
+      goFromGesture(dir);
+    },
     preventScrollOnSwipe: true,
     trackMouse: true,
-    delta: 70,
+    delta: 10,
   });
 
   useEffect(() => {
@@ -122,6 +152,68 @@ function TestModeScreen() {
       window.SpeechRecognition || window.webkitSpeechRecognition;
     setVoiceSupported(Boolean(SpeechRecognition));
   }, []);
+
+  useEffect(() => {
+    const handleWheel = (event) => {
+      const now = performance.now();
+      if (now - lastWheelNavigationRef.current < WHEEL_NAVIGATION_COOLDOWN_MS) {
+        return;
+      }
+
+      const absX = Math.abs(event.deltaX);
+      const absY = Math.abs(event.deltaY);
+      if (absX === 0 && absY === 0) {
+        return;
+      }
+
+      const axis = absX >= absY ? "x" : "y";
+      const dominantDelta = axis === "x" ? event.deltaX : event.deltaY;
+      const elapsed = Math.max(now - (wheelGestureRef.current.lastTime || now), 1);
+      const velocity = Math.abs(dominantDelta) / elapsed;
+
+      if (axis === "x") {
+        wheelGestureRef.current.x += dominantDelta;
+        wheelGestureRef.current.y = 0;
+      } else {
+        wheelGestureRef.current.y += dominantDelta;
+        wheelGestureRef.current.x = 0;
+      }
+      wheelGestureRef.current.lastTime = now;
+
+      const distance = Math.abs(
+        axis === "x" ? wheelGestureRef.current.x : wheelGestureRef.current.y
+      );
+      if (
+        distance < WHEEL_DISTANCE_THRESHOLD &&
+        velocity < WHEEL_VELOCITY_THRESHOLD
+      ) {
+        return;
+      }
+
+      event.preventDefault();
+      goFromGesture(
+        axis === "x"
+          ? dominantDelta > 0
+            ? "Left"
+            : "Right"
+          : dominantDelta > 0
+          ? "Down"
+          : "Up"
+      );
+      lastWheelNavigationRef.current = now;
+      wheelGestureRef.current = { x: 0, y: 0, lastTime: 0 };
+    };
+
+    const element = containerRef.current;
+    if (!element) {
+      return undefined;
+    }
+
+    element.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      element.removeEventListener("wheel", handleWheel);
+    };
+  }, [goFromGesture]);
 
   useEffect(() => {
     let isActive = true;
@@ -158,10 +250,18 @@ function TestModeScreen() {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === "ArrowDown" || event.key === "PageDown") {
+      if (
+        event.key === "ArrowUp" ||
+        event.key === "PageDown" ||
+        event.key === "ArrowRight"
+      ) {
         goNext();
       }
-      if (event.key === "ArrowUp" || event.key === "PageUp") {
+      if (
+        event.key === "ArrowDown" ||
+        event.key === "PageUp" ||
+        event.key === "ArrowLeft"
+      ) {
         goPrevious();
       }
       if (event.key === "Escape") {
@@ -400,7 +500,8 @@ function TestModeScreen() {
             Congratulations, you&apos;re now a purple belt.
           </h1>
           <p className="mt-6 text-lg text-purple-100 md:text-2xl">
-            Swipe up to review the last move or restart the sequence.
+            Swipe down or left to review the last move, up or right to restart
+            the sequence.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <button
@@ -486,7 +587,7 @@ function TestModeScreen() {
               Watch Video
             </a>
             <div className="text-sm text-slate-300">
-              Swipe down for next, swipe up for previous.
+              Swipe up or right for next, down or left for previous.
             </div>
             <div className="text-sm text-slate-300">
               {voiceSupported
