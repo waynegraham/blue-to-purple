@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
 import { useWakeLock } from "react-screen-wake-lock";
 import { IoMicOutline, IoMicOffOutline } from "react-icons/io5";
+import { GiBlackBelt } from "react-icons/gi";
 import movesData from "../data/moves.json";
 
 const buildYoutubeUrl = (youtube) => {
@@ -46,6 +47,10 @@ function TestModeScreen() {
   );
 
   const totalMoves = flattenedMoves.length;
+  const firstBoldMoveIndex = useMemo(
+    () => flattenedMoves.findIndex((move) => move.bold === true),
+    [flattenedMoves]
+  );
   const isComplete = currentIndex >= totalMoves;
   const currentMove = flattenedMoves[currentIndex];
 
@@ -56,6 +61,12 @@ function TestModeScreen() {
   const goPrevious = useCallback(() => {
     setCurrentIndex((index) => Math.max(index - 1, 0));
   }, []);
+
+  const jumpToPurple = useCallback(() => {
+    if (firstBoldMoveIndex >= 0) {
+      setCurrentIndex(firstBoldMoveIndex);
+    }
+  }, [firstBoldMoveIndex]);
 
   const showBanner = useCallback((message) => {
     setBanner(message);
@@ -364,12 +375,23 @@ function TestModeScreen() {
         >
           Exit Fullscreen
         </button>
-        <button
-          onClick={isListening ? stopVoice : startVoice}
-          className="absolute left-6 top-6 rounded-full border border-white/30 px-4 py-2 text-sm text-white transition hover:bg-white/10"
-        >
-          {voiceButtonContent}
-        </button>
+        <div className="absolute left-6 top-6 flex items-center gap-3">
+          <button
+            onClick={jumpToPurple}
+            className="rounded-full border border-white/30 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+          >
+            <span className="flex items-center gap-2">
+              <GiBlackBelt className="text-base" />
+              <span>Jump to Purple</span>
+            </span>
+          </button>
+          <button
+            onClick={isListening ? stopVoice : startVoice}
+            className="rounded-full border border-white/30 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+          >
+            {voiceButtonContent}
+          </button>
+        </div>
         <div className="max-w-3xl px-6 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-purple-200">
             Completion
@@ -419,6 +441,15 @@ function TestModeScreen() {
           Test Mode
         </div>
         <div className="flex items-center gap-3">
+          <button
+            onClick={jumpToPurple}
+            className="rounded-full border border-white/30 px-4 py-2 text-sm text-white transition hover:bg-white/10"
+          >
+            <span className="flex items-center gap-2">
+              <GiBlackBelt className="text-base" />
+              <span>Jump to Purple</span>
+            </span>
+          </button>
           <button
             onClick={isListening ? stopVoice : startVoice}
             className="rounded-full border border-white/30 px-4 py-2 text-sm text-white transition hover:bg-white/10"
