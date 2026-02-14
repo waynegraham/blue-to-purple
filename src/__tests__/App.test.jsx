@@ -42,3 +42,9 @@ test('filters moves based on search input', () => {
   expect(screen.getAllByText('Guillotine Choke').length).toBeGreaterThan(0);
   expect(screen.queryByText('T-Position Hip Throw')).not.toBeInTheDocument();
 });
+
+test('navigates to test preperation guide page', () => {
+  renderWithRouter(<App />);
+  fireEvent.click(screen.getByRole('link', { name: 'Test Preperation Guide' }));
+  expect(screen.getByRole('heading', { name: 'Test Preparation Guide' })).toBeInTheDocument();
+});

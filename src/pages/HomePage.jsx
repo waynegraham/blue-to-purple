@@ -73,12 +73,18 @@ function HomePage() {
           Purple Belt Demonstration
         </h2>
 
-        <div className="mb-6">
+        <div className="mb-6 flex flex-wrap items-center gap-3">
           <Link
             to="/test-mode"
             className="inline-flex items-center gap-2 rounded-full bg-purple-700 px-5 py-2 text-white shadow-lg shadow-purple-700/30 transition hover:bg-purple-600"
           >
             Start Test Mode
+          </Link>
+          <Link
+            to="/test-preparation-guide"
+            className="inline-flex items-center gap-2 rounded-full border border-purple-700 px-5 py-2 text-purple-700 transition hover:bg-purple-50"
+          >
+            Test Preperation Guide
           </Link>
         </div>
 
