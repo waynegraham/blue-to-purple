@@ -61,6 +61,13 @@ function HomePage() {
     })
     .filter(Boolean);
 
+  const toAnchorId = (value) =>
+    value
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+
   return (
     <section className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <Navigation />
@@ -69,8 +76,13 @@ function HomePage() {
           Blue to Purple <span className="text-3xl">Curriculum Techniques</span>
         </h1>
 
-        <h2 className="inline-block mt-5 mb-6 text-purple-600 dark:text-purple-300 text-2xl font-semibold tracking-tighter">
-          Purple Belt Demonstration
+        <h2
+          id="purple-belt-demonstration"
+          className="inline-block mt-5 mb-6 text-purple-600 dark:text-purple-300 text-2xl font-semibold tracking-tighter"
+        >
+          <a href="#purple-belt-demonstration" className="hover:underline">
+            Purple Belt Demonstration
+          </a>
         </h2>
 
         <div className="mb-6 flex flex-wrap items-center gap-3">
@@ -108,8 +120,13 @@ function HomePage() {
 
         {filteredData.map((move) => (
           <div key={move.label}>
-            <h2 className="my-3 text-2xl text-gray-900 dark:text-gray-300">
-              {move.label}
+            <h2
+              id={toAnchorId(move.label)}
+              className="my-3 text-2xl text-gray-900 dark:text-gray-300"
+            >
+              <a href={`#${toAnchorId(move.label)}`} className="hover:underline">
+                {move.label}
+              </a>
             </h2>
             <ul className="list-disc ps-5 mt-2 space-y-1 dark:text-gray-300">
               {move.moves.map((m) => (

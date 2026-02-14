@@ -14,8 +14,7 @@ function TestPreparationGuide() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 dark:text-slate-200/90">
             Congratulations, you got <strong>&quot;the email&quot;</strong> (or your
             instructor told you) that it is time to prepare for your test. This
-            guide helps you structure practice sessions to maximize performance
-            on test day. Consistent, focused reps win.
+            guide gives some tips to help you structure practice sessions to ease your nerves for test day.
           </p>
         </header>
 
@@ -54,13 +53,13 @@ function TestPreparationGuide() {
               Overview
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              This test is structured much like the White-to-Blue test: you
-              will demonstrate proficiency in a sequence of techniques. In
+              The test is structured much like the White-to-Blue test: you
+              will demonstrate proficiency in the same techniques,  plus a few more advanced ones. In
               addition to the techniques, you will also be asked to{" "}
-              <strong>show your game.</strong>
+              <strong>show your game</strong>.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              At this point, the test is not about collecting more moves. It is
+              At this point in your journey, the "test" is not about adding a few more moves. It is
               about showing how well you connect and apply them.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
@@ -88,7 +87,13 @@ function TestPreparationGuide() {
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               You will likely demonstrate all White-to-Blue techniques first,
-              then the purple-belt additions.
+              then move to the{" "}
+              <Link
+                className="text-purple-700 underline transition hover:text-purple-600 dark:text-purple-300 dark:hover:text-purple-200"
+                to={{ pathname: "/", hash: "#standing-defenses-from-the-front" }}
+              >
+                purple-belt additions
+              </Link>.
             </p>
           </article>
 
@@ -100,14 +105,14 @@ function TestPreparationGuide() {
               Show Your Game
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              This section shows that you understand positional advancement,
+              This will happen after the technique section and is meant to shows that you understand positional advancement,
               attacking sequences, and appropriate reactions to your
               opponent&apos;s movement. Demonstrate a clear game plan and execute
-              it under pressure.
+              it under pressure (e.g. people watching you).
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               You will be asked to show your game from specific positions and
-              present your attack chains from each one. Build a blueprint for
+              present your attack chains from each. Build a blueprint for
               Guard, Half Guard, Side Control, Mount, and Back Control. Work
               with your uke so they can feed realistic reactions that let you
               demonstrate your system. You should be competent everywhere, with
@@ -139,8 +144,8 @@ function TestPreparationGuide() {
                   Closed Guard
                 </p>
                 <ol className="mt-2 list-decimal space-y-1 ps-5 text-sm leading-6 text-slate-700 marker:text-purple-500 dark:text-slate-200">
-                  <li>Primary choke (for example, cross collar).</li>
-                  <li>Sweep if posture breaks (for example, scissor or flower).</li>
+                  <li>Primary choke (e.g., cross collar).</li>
+                  <li>Sweep if posture breaks (e.g., scissor or flower).</li>
                   <li>Back take if they defend.</li>
                   <li>Open guard transition if stacked.</li>
                 </ol>
@@ -150,9 +155,9 @@ function TestPreparationGuide() {
                   Cross Body
                 </p>
                 <ol className="mt-2 list-decimal space-y-1 ps-5 text-sm leading-6 text-slate-700 marker:text-purple-500 dark:text-slate-200">
-                  <li>Primary attack (for example, kimura).</li>
-                  <li>Secondary option if they hide the arm (for example, americana).</li>
-                  <li>Switch to the opposite side when needed.</li>
+                  <li>Primary attack (e.g., kimura).</li>
+                  <li>Secondary option if they hide the arm (e.g., americana).</li>
+                  <li>Switch to the opposite side as needed.</li>
                   <li>Transition to mount.</li>
                 </ol>
               </div>
@@ -169,6 +174,7 @@ function TestPreparationGuide() {
               <li>Roll only from that position.</li>
               <li>Exhaust your options.</li>
               <li>Reset and move to the next required position.</li>
+              <li>Make notes on what is working for you.</li>
             </ul>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               By week 3, run the full positional sequence in order.
