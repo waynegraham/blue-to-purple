@@ -75,7 +75,7 @@ function TestPreparationGuide() {
               asked to <strong>show your game</strong>.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              At this point in your journey, the "test" is not about adding a
+              At this point in your journey, the &quot;test&quot; is not about adding a
               few more moves. It is about showing how well you connect and apply
               them.
             </p>
