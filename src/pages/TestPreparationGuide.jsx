@@ -135,10 +135,10 @@ function TestPreparationGuide() {
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               You will be asked to show your game from specific positions and
               present your attack chains from each. Build a blueprint for Guard,
-              Half Guard, Side Control, Mount, and Back Control. Work with your
-              uke so they can feed realistic reactions that let you demonstrate
-              your system. You should be competent everywhere, with one position
-              that is clearly your strongest.
+              Half Guard, Side Control, Mount, and Back Control as well as
+              standing. Work with your uke so they can feed realistic reactions
+              that let you demonstrate your system. You should be competent
+              everywhere, with one position that is clearly your strongest. 
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               For every position, define:
