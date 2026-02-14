@@ -12,9 +12,10 @@ function TestPreparationGuide() {
             Test Preparation Guide
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 dark:text-slate-200/90">
-            Congratulations, you got <strong>&quot;the email&quot;</strong> (or your
-            instructor told you) that it is time to prepare for your test. This
-            guide gives some tips to help you structure practice sessions to ease your nerves for test day.
+            Congratulations, you got <strong>&quot;the email&quot;</strong> (or
+            your instructor told you) that it is time to prepare for your test.
+            This guide gives some tips to help you structure practice sessions
+            to ease your nerves for test day.
           </p>
         </header>
 
@@ -26,19 +27,34 @@ function TestPreparationGuide() {
             On This Page
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
-            <a href="#overview" className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400">
+            <a
+              href="#overview"
+              className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400"
+            >
               Overview
             </a>
-            <a href="#technique" className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400">
+            <a
+              href="#technique"
+              className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400"
+            >
               Technique
             </a>
-            <a href="#show-your-game" className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400">
+            <a
+              href="#show-your-game"
+              className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400"
+            >
               Show Your Game
             </a>
-            <a href="#thirty-day-plan" className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400">
+            <a
+              href="#thirty-day-plan"
+              className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400"
+            >
               30-Day Plan
             </a>
-            <a href="#shark-tank" className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400">
+            <a
+              href="#shark-tank"
+              className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700 transition hover:border-purple-400 hover:text-purple-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 dark:border-slate-600 dark:text-slate-200 dark:hover:border-purple-400"
+            >
               Shark Tank
             </a>
           </div>
@@ -53,14 +69,15 @@ function TestPreparationGuide() {
               Overview
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              The test is structured much like the White-to-Blue test: you
-              will demonstrate proficiency in the same techniques,  plus a few more advanced ones. In
-              addition to the techniques, you will also be asked to{" "}
-              <strong>show your game</strong>.
+              The test is structured much like the White-to-Blue test: you will
+              demonstrate proficiency in the same techniques, plus a few more
+              advanced ones. In addition to the techniques, you will also be
+              asked to <strong>show your game</strong>.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              At this point in your journey, the "test" is not about adding a few more moves. It is
-              about showing how well you connect and apply them.
+              At this point in your journey, the "test" is not about adding a
+              few more moves. It is about showing how well you connect and apply
+              them.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               This test asks:
@@ -80,20 +97,24 @@ function TestPreparationGuide() {
               Technique Portion
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              The structure is similar to White-to-Blue, but expectations
-              shift. At blue belt, you need to <strong>do the move</strong>; at
-              purple belt, you need to <strong>own the move</strong>. Be
-              intentional, smooth, and detail-oriented.
+              The structure is similar to White-to-Blue, but expectations shift.
+              At blue belt, you need to <strong>do the move</strong>; at purple
+              belt, you need to <strong>own the move</strong>. Be intentional,
+              smooth, and detail-oriented.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               You will likely demonstrate all White-to-Blue techniques first,
               then move to the{" "}
               <Link
                 className="text-purple-700 underline transition hover:text-purple-600 dark:text-purple-300 dark:hover:text-purple-200"
-                to={{ pathname: "/", hash: "#standing-defenses-from-the-front" }}
+                to={{
+                  pathname: "/",
+                  hash: "#standing-defenses-from-the-front",
+                }}
               >
                 purple-belt additions
-              </Link>.
+              </Link>
+              .
             </p>
           </article>
 
@@ -105,18 +126,19 @@ function TestPreparationGuide() {
               Show Your Game
             </h2>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
-              This will happen after the technique section and is meant to shows that you understand positional advancement,
-              attacking sequences, and appropriate reactions to your
-              opponent&apos;s movement. Demonstrate a clear game plan and execute
-              it under pressure (e.g. people watching you).
+              This will happen after the technique section and is meant to show
+              that you understand positional advancement, attacking sequences,
+              and appropriate reactions to your opponent&apos;s movement.
+              Demonstrate a clear game plan and execute it under pressure (e.g.
+              people watching you).
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               You will be asked to show your game from specific positions and
-              present your attack chains from each. Build a blueprint for
-              Guard, Half Guard, Side Control, Mount, and Back Control. Work
-              with your uke so they can feed realistic reactions that let you
-              demonstrate your system. You should be competent everywhere, with
-              one position that is clearly your strongest.
+              present your attack chains from each. Build a blueprint for Guard,
+              Half Guard, Side Control, Mount, and Back Control. Work with your
+              uke so they can feed realistic reactions that let you demonstrate
+              your system. You should be competent everywhere, with one position
+              that is clearly your strongest.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-700 dark:text-slate-200/90">
               For every position, define:
@@ -130,8 +152,9 @@ function TestPreparationGuide() {
 
             <div className="mt-5 rounded-xl border-l-4 border-purple-500 bg-purple-50/80 p-4 text-slate-800 dark:bg-purple-950/30 dark:text-slate-200">
               <p className="text-base leading-7">
-                This creates decision trees. <strong>You are not improvising.</strong>{" "}
-                You are executing a system.
+                This creates decision trees.{" "}
+                <strong>You are not improvising.</strong> You are executing a
+                system.
               </p>
             </div>
 
@@ -156,7 +179,9 @@ function TestPreparationGuide() {
                 </p>
                 <ol className="mt-2 list-decimal space-y-1 ps-5 text-sm leading-6 text-slate-700 marker:text-purple-500 dark:text-slate-200">
                   <li>Primary attack (e.g., kimura).</li>
-                  <li>Secondary option if they hide the arm (e.g., americana).</li>
+                  <li>
+                    Secondary option if they hide the arm (e.g., americana).
+                  </li>
                   <li>Switch to the opposite side as needed.</li>
                   <li>Transition to mount.</li>
                 </ol>
@@ -265,7 +290,6 @@ function TestPreparationGuide() {
             </Link>
           </div>
         </div>
-
       </main>
       <Footer />
     </section>
